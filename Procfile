@@ -1,1 +1,1 @@
-web: gunicorn Education.wsgi --log-file -
+web: gunicorn EducationERP.wsgi --log-file -
