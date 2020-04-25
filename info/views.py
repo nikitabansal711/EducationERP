@@ -353,3 +353,8 @@ def student_marks(request, assign_id):
     ass = Assign.objects.get(id=assign_id)
     sc_list = StudentCourse.objects.filter(student__in=ass.class_id.student_set.all(), course=ass.course)
     return render(request, 'info/t_student_marks.html', {'sc_list': sc_list})
+
+
+@login_required()
+def sendmail(request, class_id):
+    return render(request, 'info/sendmail.html', )

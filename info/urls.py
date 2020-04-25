@@ -7,7 +7,7 @@ urlpatterns = [
     path('student/<slug:stud_id>/attendance/', views.attendance, name='attendance'),
     path('student/<slug:stud_id>/<slug:course_id>/attendance/', views.attendance_detail, name='attendance_detail'),
     path('student/<slug:class_id>/timetable/', views.timetable, name='timetable'),
-    # path('student/<slug:class_id>/search/', views.student_search, name='student_search'),
+    path('student/<slug:class_id>/sendmail/', views.sendmail, name='sendmail'),
 
     path('student/<slug:stud_id>/marks_list/', views.marks_list, name='marks_list'),
 

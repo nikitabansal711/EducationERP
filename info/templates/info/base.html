@@ -84,6 +84,11 @@
                 <span>Time Table</span>
               </a>
             </li>
+                <li class="nav-item">
+              <a class="nav-link" href="{% url 'sendmail' request.user.student.class_id_id %}">
+                <span>Send Mail</span>
+              </a>
+            </li>
 
         {% elif request.user.is_teacher %}
             <li class="nav-item">

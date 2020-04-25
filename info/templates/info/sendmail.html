@@ -1,0 +1,16 @@
+{% extends 'info/base.html' %}
+{% block content %}
+<h1>Send Mail</h1>
+<form>
+    <div>
+        <div>From: <input type="text" name="first_name"/></div>
+        <div>To: <input type="email" name="last_name"/></div>
+        <div>Cc: <input type="text" name="last_name"/></div>
+        <div>Bcc:<input type="text" name="last_name"/></div>
+        <div>Subject:<input type="text" name="last_name"/></div>
+        <div>Body : <textarea rows="5" cols="50" name="description">Enter Email content here</textarea></div>
+        <input type="submit" >
+    </div>
+
+</form>
+{% endblock %}
