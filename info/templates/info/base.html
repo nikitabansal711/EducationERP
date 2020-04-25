@@ -32,11 +32,11 @@
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top" >
 
-    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand navbar-dark  static-top"style="background-color:#0069D9">
 
-      <a class="navbar-brand mr-1" href="{% url 'index' %}">CollegeERP</a>
+      <a class="navbar-brand mr-1" href="{% url 'index' %}">EducationERP</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -62,8 +62,7 @@
 
     <div id="wrapper">
 
-      <!-- Sidebar -->
-      <ul class="sidebar navbar-nav">
+      <ul class="sidebar navbar-nav" style="background-color:#7d8062">
             <li class="nav-item">
               <a class="nav-link" href="{% url 'index' %}">
                 <span>Home</span>
@@ -73,11 +72,6 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'attendance' request.user.student.USN %}">
                 <span>Attendance</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'attendance' request.user.student.USN %}">
-                <span>Attendance By Subject</span>
               </a>
             </li>
             <li class="nav-item">
